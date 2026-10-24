@@ -57,9 +57,17 @@ add_filter('woocommerce_order_item_needs_processing', function ($necesita, $prod
   return ($producto && $producto->is_virtual()) ? false : $necesita;
 }, 10, 2);
 
+// Producto digital: en el pago solo pedimos lo necesario (sin dirección ni notas de entrega).
+add_filter('woocommerce_enable_order_notes_field', '__return_false');
+add_filter('woocommerce_checkout_fields', function ($campos) {
+  foreach (['billing_company', 'billing_address_1', 'billing_address_2', 'billing_city', 'billing_state', 'billing_postcode'] as $k) unset($campos['billing'][$k]);
+  if (isset($campos['billing']['billing_phone'])) $campos['billing']['billing_phone']['required'] = false;
+  return $campos;
+});
+
 // Casilla de condiciones con la renuncia al desistimiento (art. 103 m TRLGDCU).
 add_filter('woocommerce_get_terms_and_conditions_checkbox_text', function () {
-  return 'He leído y acepto las [terms]. Solicito recibir mi código de licencia ahora mismo y entiendo que, una vez recibido, pierdo el derecho de desistimiento.';
+  return 'He leído y acepto los [terms]. Solicito recibir mi código de licencia ahora mismo y entiendo que, una vez recibido, pierdo el derecho de desistimiento.';
 });
 
 // Pasar de Básica a Pro: hay que dar el código Básica.
