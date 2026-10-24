@@ -147,12 +147,18 @@ add_action('woocommerce_email_before_order_table', function ($order, $admin, $te
 // Cada compra de Básica o Pro genera un código AMIGO-XXXXX: 10 % de descuento en Básica o Pro,
 // válido para 3 compras de otras personas. Se envía en el correo de compra y la app lo comparte.
 function t360_crear_codigo_amigo($order) {
-  $ya = $order->get_meta('_t360_codigo_amigo');
-  if ($ya) return $ya;
+  // El correo y el cambio de estado llegan con copias distintas del pedido: se mira el guardado.
+  static $hechos = [];
+  $id = $order->get_id();
+  if (isset($hechos[$id])) return $hechos[$id];
+  $guardado = wc_get_order($id);
+  $ya = $guardado ? $guardado->get_meta('_t360_codigo_amigo') : '';
+  if ($ya) return $hechos[$id] = $ya;
+  $order = $guardado ?: $order;
   $ids = [t360_id_sku(T360_SKU_BASICA), t360_id_sku(T360_SKU_PRO)];
   $compra = false;
   foreach ($order->get_items() as $item) if (in_array((int) $item->get_product_id(), $ids, true)) $compra = true;
-  if (!$compra) return '';
+  if (!$compra) return $hechos[$id] = '';
   $letras = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
   do {
     $codigo = 'AMIGO-';
@@ -174,7 +180,7 @@ function t360_crear_codigo_amigo($order) {
   $order->update_meta_data('_t360_codigo_amigo', $codigo);
   $order->save();
   $order->add_order_note('Código de recomendado creado: ' . $codigo);
-  return $codigo;
+  return $hechos[$id] = $codigo;
 }
 // Prioridad 5: antes de que salga el correo de pedido completado.
 add_action('woocommerce_order_status_completed', function ($order_id) {
