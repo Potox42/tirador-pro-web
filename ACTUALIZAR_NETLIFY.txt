@@ -1,4 +1,8 @@
-TIRADOR PRO 1.0 (R25) · VERSIÓN OPERATIVA
+TIRADOR PRO 1.0 (R26) · VERSIÓN OPERATIVA
+
+Novedades R26:
+- Voy al campo: lista de imprescindibles y opcionales; con los imprescindibles marcados el bloque ya está listo.
+
 
 Novedades R25:
 - Próxima revista calculada según la normativa: cada 5 años, al renovar la licencia (D, E o F) del arma.

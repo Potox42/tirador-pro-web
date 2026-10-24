@@ -18,10 +18,10 @@
 
   function prepStatus() {
     var done = 0, total = 0, ready = false;
-    try { var L = fieldChecklist || []; total = L.length; done = L.filter(function (x) { return x.checked; }).length; } catch (e) {}
+    try { if (window.TPChecklistReq) { var q = window.TPChecklistReq(); total = q.total; done = q.done; } else { var L = fieldChecklist || []; total = L.length; done = L.filter(function (x) { return x.checked; }).length; } } catch (e) {}
     try { var s = window.v371FieldState && window.v371FieldState(); if (s) ready = !!s.ready; } catch (e) {}
     if (ready) return { ok: true, txt: 'Todo listo para salir ✓' };
-    if (total) return { ok: done === total, txt: done + ' de ' + total + ' cosas preparadas' };
+    if (total) return { ok: done === total, txt: done + ' de ' + total + ' imprescindibles preparados' };
     return { ok: false, txt: 'Armas, documentación, munición y qué llevar' };
   }
 

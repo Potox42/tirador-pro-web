@@ -19,7 +19,7 @@
     {
       "path": "field-test-sw.js",
       "bytes": 2605,
-      "sha256": "9ef690d41b5afddeb773fa7b1f22bfa9bdcbaa1e70346a115ed1786ea5df0e2a"
+      "sha256": "2ff1d9efda31e2da2898a1034995d9b27c557b77848cecf93f3ae0b869577188"
     },
     {
       "path": "web/tirador-pro-field-test.js",
@@ -54,7 +54,7 @@
     {
       "path": "web/tirador-pro-r10-operativa.js",
       "bytes": 11212,
-      "sha256": "b533fd563c6d748ad099cfa449debab10feecdc511ab70677de6cda7d3839d5c"
+      "sha256": "b07ad1eed982d39ca266ee77ffa2ec711c204c807511cf122d41ed7fc7fecc88"
     },
     {
       "path": "web/tirador-pro-r11-ocr.js",
@@ -78,13 +78,13 @@
     },
     {
       "path": "web/tirador-pro-r16-checklist.js",
-      "bytes": 9756,
-      "sha256": "0e1b7713306ce91483108e6f13a5d07ce0528dbc2033b9c4b76ca971b6199737"
+      "bytes": 13107,
+      "sha256": "69d9197a3a568031926ece9aef309a29fb3cd4897ddc924f3e419e1dde8f7058"
     },
     {
       "path": "web/tirador-pro-r17-inicio.js",
-      "bytes": 12533,
-      "sha256": "58b673b20b7e65594c5656b243c176a87428a9e84907114b6d114d764ea89444"
+      "bytes": 12648,
+      "sha256": "407d409881074cb244c6aa5f1495941a40f8319f50abfc1a47bafdb94cfa34e9"
     },
     {
       "path": "web/tirador-pro-r18-foto-calendario.js",
@@ -128,8 +128,8 @@
     },
     {
       "path": "Tirador-Pro-Field-Test-alpha.31.html",
-      "bytes": 543616,
-      "sha256": "a755a0c87f8d6f8c2adfb7920fce9bb7ecea74c3bde12a8d254e84baef4f283f"
+      "bytes": 547082,
+      "sha256": "8f74ed5087216061eb5ee843238bfeb443b1556c59682d9c20115e635ccca293"
     }
   ]
 }

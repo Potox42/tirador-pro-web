@@ -22,7 +22,7 @@
   FT.snapshot = function () {
     var storage = {};
     dataKeys().forEach(function (k) { if (k === 'tpfield_test_run_v2') return; var v = localStorage.getItem(k); if (v != null) { try { storage[k] = JSON.parse(v); } catch (e) { storage[k] = v; } } });
-    return { format: 'TiradorProFieldTest', version: 1, app: 'Tirador Pro', appVersion: '1.0-R25', exportedAt: new Date().toISOString(), containsSensitiveDocuments: true, storage: storage };
+    return { format: 'TiradorProFieldTest', version: 1, app: 'Tirador Pro', appVersion: '1.0-R26', exportedAt: new Date().toISOString(), containsSensitiveDocuments: true, storage: storage };
   };
   FT.exportData = function () { if (window.TiradorProCampo) return window.TiradorProCampo.backup(); };
   async function importText(text) {
@@ -71,7 +71,7 @@
     var p = document.getElementById('perfil'); if (!p) return;
     var w = document.createTreeWalker(p, NodeFilter.SHOW_TEXT, null), n;
     while ((n = w.nextNode())) {
-      if (n.nodeValue.indexOf('Tirador Pro 4.0.0-alpha.31') !== -1) n.nodeValue = n.nodeValue.replace('Tirador Pro 4.0.0-alpha.31', 'Tirador Pro 1.0 (R25)');
+      if (n.nodeValue.indexOf('Tirador Pro 4.0.0-alpha.31') !== -1) n.nodeValue = n.nodeValue.replace('Tirador Pro 4.0.0-alpha.31', 'Tirador Pro 1.0 (R26)');
     }
   }
 
