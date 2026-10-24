@@ -1,0 +1,130 @@
+{
+  "format": "tirador-pro-field-test-build-manifest",
+  "version": 1,
+  "appVersion": "4.0.0-alpha.31",
+  "fieldTest": false,
+  "sensitiveDocuments": true,
+  "offline": true,
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 258929,
+      "sha256": "0fb33d7ef6637c3805b19be5bc6a87e05ec7d243173528ae2923a0c25b131b69"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 325,
+      "sha256": "b3f3b38d099cf8a4b5eb8950733a78ff2961a6446f5ae52b50e1322e6646e8f2"
+    },
+    {
+      "path": "field-test-sw.js",
+      "bytes": 2570,
+      "sha256": "05d29c9b58e9ba841637303047c8ae19721e9d33a75061c55dc9df11805b67b3"
+    },
+    {
+      "path": "web/tirador-pro-field-test.js",
+      "bytes": 22380,
+      "sha256": "2189ad7420f0c327dbb1d353eea145c4b0400b54f2d77fee8379d1def6f26f66"
+    },
+    {
+      "path": "web/tirador-pro-ios-fix.js",
+      "bytes": 7924,
+      "sha256": "f54f0b7e7199a02aca59b0c1a048c62617b3ce446d10c583e931633232de1dee"
+    },
+    {
+      "path": "web/tirador-pro-campo-mejoras.js",
+      "bytes": 11011,
+      "sha256": "c8e4b46cdfcc69025b6bd0fc28375f6cf25fd3da991c7340d93378b13d3dbf65"
+    },
+    {
+      "path": "web/tirador-pro-r7-entreno.js",
+      "bytes": 16120,
+      "sha256": "8975ed4e8133886b7974ef7b7d39ea0a2fc528fadd637ade10e3be9b222768fb"
+    },
+    {
+      "path": "web/tirador-pro-r8-pulido.js",
+      "bytes": 6522,
+      "sha256": "579c5948a50572c5b3e8dfa5129791955bd4eddd156fb5fba259fb70c8e2acce"
+    },
+    {
+      "path": "web/tirador-pro-r9-bloqueo.js",
+      "bytes": 19825,
+      "sha256": "5dafe60bb901abf077508b43d0cc9b91365679c353038ee74a253347d2b10f55"
+    },
+    {
+      "path": "web/tirador-pro-r10-operativa.js",
+      "bytes": 11212,
+      "sha256": "777fa0c36ec1218568cc393da5cb385833b86014674e28f640b7150a2307ddc8"
+    },
+    {
+      "path": "web/tirador-pro-r11-ocr.js",
+      "bytes": 24122,
+      "sha256": "ba1a70f3c8910d8e76c6e259e94faf25ef67b8bea06fcd297fa29357e3bd2b04"
+    },
+    {
+      "path": "web/tirador-pro-r13-estable.js",
+      "bytes": 19208,
+      "sha256": "221c48385fe248ed1a81d0dce3489e3b89409f0b7a7622e5de3422710f0bbe19"
+    },
+    {
+      "path": "web/tirador-pro-r14-timer-avisos.js",
+      "bytes": 28583,
+      "sha256": "194d749288dc86519671bf04b8ca002130dbdfc9f424f7e72dd880713c2fbeb6"
+    },
+    {
+      "path": "web/tirador-pro-r15-municion.js",
+      "bytes": 14305,
+      "sha256": "870b8270d73dc4e1499a7db948fa46a23a536104be67a062ced7d13b65d6f744"
+    },
+    {
+      "path": "web/tirador-pro-r16-checklist.js",
+      "bytes": 9756,
+      "sha256": "0e1b7713306ce91483108e6f13a5d07ce0528dbc2033b9c4b76ca971b6199737"
+    },
+    {
+      "path": "web/tirador-pro-r17-inicio.js",
+      "bytes": 12533,
+      "sha256": "58b673b20b7e65594c5656b243c176a87428a9e84907114b6d114d764ea89444"
+    },
+    {
+      "path": "web/tirador-pro-r18-foto-calendario.js",
+      "bytes": 20117,
+      "sha256": "96c915e7616e6d61890aa89b4fd0c4d960709318035c8ddaa3c23dea8efc94f3"
+    },
+    {
+      "path": "web/tirador-pro-r19-fotos-docs.js",
+      "bytes": 13968,
+      "sha256": "02130d1e3b6d0495e058c36a9146505657f79ef5bdb49277d4327d89c56eef35"
+    },
+    {
+      "path": "web/tirador-pro-r20-identificacion.js",
+      "bytes": 7083,
+      "sha256": "3e9e07a6fae9663deeac5854d46fbe5725f29a4d8a90c538db6df7880be7a828"
+    },
+    {
+      "path": "web/tirador-pro-r21-escaner.js",
+      "bytes": 3422,
+      "sha256": "a22da19db3a9d9e3e5c3ec687e965b2fd870595ed7d87a15320fcd67f875ea98"
+    },
+    {
+      "path": "web/tirador-pro-r22-guias.js",
+      "bytes": 6248,
+      "sha256": "4bd877d8fdb3d354a7ee1955ea9f4ecab2f59026bc6d0f5775d975f925789551"
+    },
+    {
+      "path": "web/tirador-pro-r23-foto-escaner.js",
+      "bytes": 5214,
+      "sha256": "c589f67d9c1e898ab9c24847ca96d137e4d0320a0b61fdfc63a5a717fe35ba71"
+    },
+    {
+      "path": "FIELD_TEST_PLAN.json",
+      "bytes": 3088,
+      "sha256": "b6e0535931232b484ca00b11b2cc207a2e2518ebf7f20297bf61fc6ec29651b2"
+    },
+    {
+      "path": "Tirador-Pro-Field-Test-alpha.31.html",
+      "bytes": 536783,
+      "sha256": "128856831f00d00c193d049bb2173729c138ced5c32348906bb565c781b6c1d1"
+    }
+  ]
+}

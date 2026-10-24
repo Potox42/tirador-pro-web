@@ -1,0 +1,11 @@
+{
+  "name": "Tirador Pro",
+  "short_name": "Tirador Pro",
+  "description": "Tirador Pro: armas, munición, entrenamientos y documentación del tirador deportivo.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#13150f",
+  "theme_color": "#13150f",
+  "orientation": "any"
+}

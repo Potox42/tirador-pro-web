@@ -1,0 +1,106 @@
+TIRADOR PRO 1.0 (R24) · VERSIÓN OPERATIVA
+
+Novedades R24:
+- Panel de tiro: URGENTES, CARTUCHOS y ARMAS se pueden pulsar y llevan a Avisos, Munición y Armas.
+
+
+Novedades R23:
+- Fotos de documentos (DNI, otros, carnet federativo, guías): "Hacer foto con marco" usa la cámara del escáner,
+  recorta y centra igual que la licencia. Desde la galería también se recortan solas.
+
+
+Novedades R22:
+- Cartera › Guías: foto grande que se abre al tocarla; botones "Ver foto / Subir foto" y "Ver arma" (la tarjeta ya no salta al arma).
+- Cartera › Otros (DNI, pasaporte, seguro…): foto de anverso y reverso de cada documento. Tipos DNI y Pasaporte añadidos.
+
+
+Novedades R21:
+- Escáner: al hacer o subir la foto ya se puede GUARDAR (leer datos es opcional). El carnet federativo escaneado
+  aparece en Cartera › Federación. Fotos de guías y carnet recortadas y centradas en su recuadro.
+
+
+Novedades R20:
+- Nº de identificación del arma, justo debajo del Nº de guía: formulario, ficha, Cartera › Guías y escáner de la guía.
+
+
+Novedades R19:
+- Federación: el QR inventado se sustituye por el QR real de tu federación, subido desde la galería.
+- Foto del carnet federativo (anverso y reverso) y foto de cada guía de pertenencia (Cartera › Guías y ficha del arma).
+
+
+Novedades R18:
+- Barra inferior: botón Entrenar destacado (círculo verde oliva elevado).
+- Foto del arma (cámara o galería): se ve entera, ajustada a la pantalla y centrada; miniatura en la lista. Cifrada con PIN.
+- Fecha de expedición de la guía: en la ficha del arma y al escanear la guía (se intenta leer sola).
+- Calendario: "+ Google" por cada fecha (Google Calendar) y archivo para el iPhone por Mail ("Añadir todo").
+
+
+Novedades R17:
+- Inicio: Panel de tiro en orden: 1 · Voy al campo → 2 · Nuevo entrenamiento → Temporizador.
+  Avisos en su propia caja. "Acciones" pasa a "Mi tiro": Armas, Munición, Entrenamientos y Evolución.
+- Nueva pantalla Entrenamientos con todas las sesiones (filtro por arma). Competiciones: botón en Entrenar.
+
+
+Novedades R16:
+- Voy al campo: checklist "Qué llevar" por categorías (documentación, armas y transporte, protección,
+  material de tiro, limpieza, personal), con lista recomendada, añadir/quitar, desmarcar todo y restaurar.
+
+
+Novedades R15:
+- Vincular munición y armas: campo "Munición que usa" en la ficha del arma, casillas "Armas que la usan"
+  en la ficha de munición, botón "Vincular armas" en Munición y "Cambiar munición" en la ficha del arma.
+- El calibre se compara sin espacios, puntos ni mayúsculas (.22LR = .22 LR).
+- Entrenar propone la munición vinculada y el consumo se descuenta de ese stock.
+
+
+Novedades R14:
+- Temporizador de tiradas por voz (Entrenar y pantalla de serie): Precisión 5 min, Estándar 150/20/10 s,
+  Velocidad 8/6/4 s, Duelo 7 s rojo + 3 s verde. Voz "Cargar", "Atención", "Alto", pitidos,
+  pantalla roja/verde, pantalla siempre encendida. Programas completos de Estándar y Velocidad.
+- Avisos de caducidad al calendario (Cartera y Perfil): archivo .ics con licencias, revista de armas,
+  federación y otros documentos, con avisos 60, 30 y 7 días antes y el mismo día.
+
+
+Novedades R13 (estabilización, sin funciones nuevas):
+- Fotos de licencias, guías y documentos en IndexedDB (mucho más espacio). En localStorage solo
+  queda una referencia. Al abrir R13 se mueven solas las fotos que hubiera de versiones anteriores.
+  Con PIN, las fotos se guardan cifradas (AES-256-GCM).
+- Copias de seguridad protegidas con contraseña por defecto. "Sin cifrar" solo tras aviso.
+- Importar: valida la copia, pide la contraseña si está protegida, guarda el estado anterior
+  (botón DESHACER ÚLTIMA IMPORTACIÓN en Perfil) y espera a que todo se guarde antes de recargar.
+- Corregido el bucle de la copia cuando el navegador no permite compartir archivos.
+- Quitado el borrado automático de datos al arrancar.
+
+Novedades R12:
+- Armas: botón "AÑADIR CON LA CÁMARA (GUÍA)" y, dentro de "Añadir arma", "RELLENAR CON LA CÁMARA":
+  se hace o sube la foto de la guía y se crea el arma con nº de guía, marca, modelo, calibre y nº de serie.
+
+Novedades R11 (licencias y guías por cámara o foto):
+- Escáner con botón "Subir foto" (galería o cámara del iPhone).
+- Lectura automática (OCR Tesseract en español, el mismo que Tirador Deportivo, cargado desde
+  potox42.github.io): de la licencia lee NIF/NIE, cada licencia E/F/D con fechas y la categoría de la F.
+- Nuevo tipo "Guía de pertenencia": lee nº de guía, marca, modelo, calibre y nº de serie;
+  lo asigna a un arma existente o crea una nueva. Botones en Cartera > Guías.
+- La primera lectura necesita conexión (descarga ~6 MB); después funciona sin cobertura.
+- Revisa siempre los datos leídos antes de guardar.
+
+Qué cambia respecto a las versiones de prueba (R10):
+- Al abrirla por primera vez BORRA UNA SOLA VEZ los datos de las versiones de prueba
+  (armas, munición, entrenamientos y PIN de prueba). Después ya no borra nada.
+- Cartera activada: licencia de armas (F con clase, E, D y fechas), tarjeta federativa,
+  guías de pertenencia (campo Guía en cada arma) y otros documentos (seguro, certificado...).
+- Escáner de documentos: guarda la foto; la lectura automática (OCR) no está disponible,
+  los datos se escriben a mano.
+- Copias de seguridad completas en Perfil > Copias de seguridad (incluyen documentación,
+  NO van cifradas: guardarlas en sitio seguro). Importar copia y Borrar todos los datos.
+- Aviso en Cartera para activar el PIN antes de guardar documentación.
+- Aviso si la memoria del navegador se llena.
+- Nombre de la app: "Tirador Pro" (sin "prueba de campo").
+
+Incluye todo lo anterior: estética verde oliva, plantillas, X y decimales, munición
+del inventario, guardado automático, PIN con datos cifrados (AES-256-GCM).
+
+Para actualizar Netlify: Deploys > arrastrar esta carpeta (o Tirador-R24-netlify.zip).
+En el iPhone: borrar el icono antiguo, abrir la web en Safari > Compartir >
+"Añadir a pantalla de inicio" (ahora el nombre será "Tirador Pro").
+Comprueba en Perfil > Copias de seguridad que pone VERSIÓN 1.0.

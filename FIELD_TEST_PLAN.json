@@ -1,0 +1,86 @@
+{
+  "format": "tirador-pro-field-test-plan",
+  "version": 1,
+  "appVersion": "4.0.0-alpha.31",
+  "purpose": "Prueba real de usabilidad y operativa en campo de tiro antes de publicación/legal final.",
+  "rules": [
+    "No introducir licencias, números de documento, OCR ni imágenes de documentación.",
+    "Usar un origen HTTPS dedicado para separar almacenamiento y habilitar PWA/offline.",
+    "Exportar el fichero .tpfield.json al terminar cada jornada de prueba.",
+    "La build HTML no sustituye a la app nativa cifrada ni valida cumplimiento legal."
+  ],
+  "cases": [
+    {
+      "id": "FIELD-INSTALL-01",
+      "critical": true,
+      "title": "Instalación PWA",
+      "expected": "Se abre desde pantalla de inicio y muestra PRUEBA DE CAMPO · HTML."
+    },
+    {
+      "id": "FIELD-OFFLINE-02",
+      "critical": true,
+      "title": "Uso sin cobertura",
+      "expected": "Tras una primera carga online, Inicio/Armas/Entrenar/Munición siguen abriendo sin red."
+    },
+    {
+      "id": "FIELD-CLEAN-03",
+      "critical": true,
+      "title": "Estado inicial limpio",
+      "expected": "No aparecen Pardini/RWS/competiciones de ejemplo ni documentación demo."
+    },
+    {
+      "id": "FIELD-WEAPON-04",
+      "critical": true,
+      "title": "Alta de arma de prueba",
+      "expected": "Se crea un arma sin número de guía y permanece tras recargar."
+    },
+    {
+      "id": "FIELD-AMMO-05",
+      "critical": true,
+      "title": "Munición de prueba",
+      "expected": "Compra/movimiento actualiza stock y persiste tras recarga."
+    },
+    {
+      "id": "FIELD-TRAIN-06",
+      "critical": true,
+      "title": "Entrenamiento manual real",
+      "expected": "Configurar arma/series, introducir disparos y finalizar sin perder la sesión."
+    },
+    {
+      "id": "FIELD-ATOMIC-07",
+      "critical": true,
+      "title": "Impacto de entrenamiento",
+      "expected": "La sesión actualiza estadísticas, disparos del arma y consumo de munición coherentemente en la build HTML."
+    },
+    {
+      "id": "FIELD-UX-08",
+      "critical": false,
+      "title": "Uso con luz exterior/guantes",
+      "expected": "Botones, contraste, tamaño y navegación son utilizables en condiciones reales."
+    },
+    {
+      "id": "FIELD-CAMERA-09",
+      "critical": false,
+      "title": "Asistente/cámara web",
+      "expected": "El navegador solicita cámara y permite captura cuando el dispositivo lo soporte."
+    },
+    {
+      "id": "FIELD-EXPORT-10",
+      "critical": true,
+      "title": "Exportar datos de prueba",
+      "expected": "Genera .tpfield.json sin licencias, documentos, OCR, imágenes ni números de guía."
+    },
+    {
+      "id": "FIELD-IMPORT-11",
+      "critical": true,
+      "title": "Importar datos de prueba",
+      "expected": "El .tpfield.json repone armas/munición/entrenamientos de test en un navegador limpio."
+    },
+    {
+      "id": "FIELD-ISOLATION-12",
+      "critical": true,
+      "title": "Aislamiento de storage",
+      "expected": "Las claves del navegador usan namespace tpfield* y no tp34/tp36/tp37 del prototipo."
+    }
+  ]
+}
