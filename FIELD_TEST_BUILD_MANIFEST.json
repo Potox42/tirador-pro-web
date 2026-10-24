@@ -8,8 +8,8 @@
   "files": [
     {
       "path": "index.html",
-      "bytes": 258929,
-      "sha256": "0fb33d7ef6637c3805b19be5bc6a87e05ec7d243173528ae2923a0c25b131b69"
+      "bytes": 258984,
+      "sha256": "3612472f31dab7051dcd3185e0904fc7f40fab4eb73d168626818e28fdf18eaf"
     },
     {
       "path": "manifest.webmanifest",
@@ -18,8 +18,8 @@
     },
     {
       "path": "field-test-sw.js",
-      "bytes": 2570,
-      "sha256": "05d29c9b58e9ba841637303047c8ae19721e9d33a75061c55dc9df11805b67b3"
+      "bytes": 2605,
+      "sha256": "9ef690d41b5afddeb773fa7b1f22bfa9bdcbaa1e70346a115ed1786ea5df0e2a"
     },
     {
       "path": "web/tirador-pro-field-test.js",
@@ -54,7 +54,7 @@
     {
       "path": "web/tirador-pro-r10-operativa.js",
       "bytes": 11212,
-      "sha256": "777fa0c36ec1218568cc393da5cb385833b86014674e28f640b7150a2307ddc8"
+      "sha256": "b533fd563c6d748ad099cfa449debab10feecdc511ab70677de6cda7d3839d5c"
     },
     {
       "path": "web/tirador-pro-r11-ocr.js",
@@ -117,14 +117,19 @@
       "sha256": "c589f67d9c1e898ab9c24847ca96d137e4d0320a0b61fdfc63a5a717fe35ba71"
     },
     {
+      "path": "web/tirador-pro-r25-revista.js",
+      "bytes": 6815,
+      "sha256": "1e1cd3772dfdccaa932fb4465d0b14b48335897af62a7362b8aef1cc7dad2d5e"
+    },
+    {
       "path": "FIELD_TEST_PLAN.json",
       "bytes": 3088,
       "sha256": "b6e0535931232b484ca00b11b2cc207a2e2518ebf7f20297bf61fc6ec29651b2"
     },
     {
       "path": "Tirador-Pro-Field-Test-alpha.31.html",
-      "bytes": 536783,
-      "sha256": "128856831f00d00c193d049bb2173729c138ced5c32348906bb565c781b6c1d1"
+      "bytes": 543616,
+      "sha256": "a755a0c87f8d6f8c2adfb7920fce9bb7ecea74c3bde12a8d254e84baef4f283f"
     }
   ]
 }

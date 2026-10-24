@@ -1,4 +1,9 @@
-TIRADOR PRO 1.0 (R24) · VERSIÓN OPERATIVA
+TIRADOR PRO 1.0 (R25) · VERSIÓN OPERATIVA
+
+Novedades R25:
+- Próxima revista calculada según la normativa: cada 5 años, al renovar la licencia (D, E o F) del arma.
+  Casilla en la ficha del arma para ponerla a mano si se prefiere.
+
 
 Novedades R24:
 - Panel de tiro: URGENTES, CARTUCHOS y ARMAS se pueden pulsar y llevan a Avisos, Munición y Armas.
@@ -100,7 +105,7 @@ Qué cambia respecto a las versiones de prueba (R10):
 Incluye todo lo anterior: estética verde oliva, plantillas, X y decimales, munición
 del inventario, guardado automático, PIN con datos cifrados (AES-256-GCM).
 
-Para actualizar Netlify: Deploys > arrastrar esta carpeta (o Tirador-R24-netlify.zip).
+Para actualizar Netlify: Deploys > arrastrar esta carpeta (o Tirador-R25-netlify.zip).
 En el iPhone: borrar el icono antiguo, abrir la web en Safari > Compartir >
 "Añadir a pantalla de inicio" (ahora el nombre será "Tirador Pro").
 Comprueba en Perfil > Copias de seguridad que pone VERSIÓN 1.0.
